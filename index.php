@@ -8,7 +8,7 @@
 	</head>
 	<body>
 		<?php include "cabecalho.php"; ?>
-		<div>
+		<div class="main-container">
 			<table>
 				<?php
 				// CRIAÇÃO DA TABELA DE ESTADOS CADASTRADOS

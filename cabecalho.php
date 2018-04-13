@@ -8,7 +8,7 @@
 			<li><a href="index.php">Home</a></li>
 			<li><a href="form_estado.php">Casdastrar Estado</a></li>
 			<li><a href="form_cidade.php">Cadastrar Cidade</a></li>
-			<li><a href="form_cadastro.php">Cadastrar Pessoa</a></li>
+			<li><a href="form_usuario.php">Cadastrar Pessoa</a></li>
 		</ul>
 	</nav>
 </div>

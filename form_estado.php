@@ -10,17 +10,19 @@
 
 	<body>
 		<?php include 'cabecalho.php'; ?>
-		<form action="cadastro_estado.php"  method="post">
-			<p>
-				<label>Sigla:</label>
-				<input type="text" name="sigla"  placeholder="AA" maxlength="2" requried >
-			</p>
-			<p>
-				<label>Nome do estado:</label>
-				<input type="text" name="estado" required >
-			</p>
+		<div class="main-container">
+			<form action="cadastro_estado.php"  method="post">
+				<p>
+					<label>Sigla:</label>
+					<input type="text" name="sigla"  placeholder="AA" maxlength="2" requried >
+				</p>
+				<p>
+					<label>Nome do estado:</label>
+					<input type="text" name="estado" required >
+				</p>
 
-			<input type="submit" name="envio" value="Cadastrar" >
-		</form>
+				<input type="submit" name="envio" value="Cadastrar" >
+			</form>
+		</div>	
 	</body>
 </html>
