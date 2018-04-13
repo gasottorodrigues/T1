@@ -4,37 +4,40 @@
 	<head>
 		<title>Cadastrar Cidade</title>
 		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="css/interface.css">
 	</head>
 	<body>
 
 		<?php include "cabecalho.php"; ?>
 
-		<form action="cadastro_cidade.php" method="post">
-			<p>
-				<label>Estado:</label>
-				<select name="estado">
-				<?php
-					$semcad = false;
-					if(file_exists('xml/estado.xml')){
-						$xml = simplexml_load_file('xml/estado.xml');
+		<div class="main-container">
+			<form action="cadastro_cidade.php" method="post">
+				<p>
+					<label>Estado:</label>
+					<select name="estado">
+					<?php
+						$semcad = false;
+						if(file_exists('xml/estado.xml')){
+							$xml = simplexml_load_file('xml/estado.xml');
 
-						foreach($xml as $estd){
-							echo "<option value= '". $estd->sigla ."'>"³ ."</option>";
+							foreach($xml as $estd){
+								echo "<option value= '". $estd->sigla ."'>" ."</option>";
+							}
+						}else{
+							echo"<option selected>Não há estados Cadastrados</option>";
+							$semcad = true;
 						}
-					}else{
-						echo"<option selected>Não há estados Cadastrados</option>";
-						$semcad = true;
-					}
-				?>
-				</select>
-			</p>
+					?>
+					</select>
+				</p>
 
-			<p>
-				<label>nome da Cidade:</label>
-				<input type="text" name="cidade" required >
-			</p>
+				<p>
+					<label>nome da Cidade:</label>
+					<input type="text" name="cidade" required >
+				</p>
 
-			<input type="submit" name="envio" value="Cadastrar" <?php if($semcad){ echo"disabled = 'disabled'";} ?> >
-		</form>
+				<input type="submit" name="envio" value="Cadastrar" <?php if($semcad){ echo"disabled = 'disabled'";} ?> >
+			</form>
+		</div>
 	</body>
 </html>

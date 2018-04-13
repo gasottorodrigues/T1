@@ -2,9 +2,10 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Cadastrar Pessoa</title>
+		<title>Cadastrar Cidade</title>
 		<meta charset="utf-8">
-	</head>
+		<link rel="stylesheet" type="text/css" href="css/interface.css">
+	</head> 
 	<body>
 
 		<?php include "cabecalho.php"; ?>

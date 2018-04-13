@@ -2,10 +2,10 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Estado Concluído</title>
+		<title>Cadastrar Cidade</title>
 		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="css/interface.css">
 	</head>
-	<body>
 	<?php
 
 		include "cabecalho.php";
