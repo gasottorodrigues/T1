@@ -11,7 +11,7 @@
 		include "cabecalho.php";
 
 		$sigla = strtoupper($_POST["sigla"]);
-		$estado = $_POST["estado"];
+		$estado = mb_convert_case($_POST["estado"], MB_CASE_TITLE, 'UTF-8');
 
 		if(!file_exists('xml/estado.xml')){
 			$xml = 

@@ -1,0 +1,116 @@
+.form-container h1{
+	display:block;
+	width:100%;
+	color:#f99;
+	font-weight: lighter;
+	font-size:4em;
+	text-align:center;
+	border-bottom: 1px solid #F99;
+	padding-bottom: 5px;
+	text-transform: uppercase;
+}
+
+ form{
+	width:100%;
+	margin:80px auto 0px auto;
+}
+
+.form-container form p{
+	display: flex;
+	justify-content: center;
+	margin-bottom:15px;
+}
+
+
+
+.form-container form p.radio input{
+	display:none;
+}
+
+.form-container form p.radio label.sublabel{
+	display: block;
+	margin: 0;
+	width:50%;
+	text-align: center;
+	transition: all 0.3s;
+}
+
+label.sublabel:hover{
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+#masc:checked ~ #mascl{
+	background-color: #55D;
+	color:white;
+}
+
+#fem:checked ~ #feml{
+	background-color: #B33;
+	color:white;
+}
+
+
+.form-container form p label{
+	width:20%;
+	text-align: right;
+	font-size:1.5em;
+	color:#099;
+	height:50px;
+	line-height: 50px;
+	text-transform: capitalize;
+	font-weight: lighter;
+	margin-right: 8px;
+}
+
+
+.form-container form p input, select{
+	width:60%;
+	border:1px solid #099;
+	box-sizing: border-box;
+	font-size:1.5em;
+	height:50px;
+	line-height: 50px;
+	text-align: center;
+	outline: none;
+	transition: all 0.3s;
+	color:rgb(100,100,100);
+}
+
+.form-container form p span{
+	width:60%;
+	display: flex;
+	justify-content: center;
+}
+
+.form-container form p input:focus{
+	box-shadow: inset 5px 0px rgba(0,100,100,0.3);
+}
+
+
+.form-container form input[type="submit"]{
+	margin-top:80px;
+	width:100%;
+	text-align:center;
+	text-transform: uppercase;
+	font-weight: lighter;
+	display: block;
+	background-color: white;
+	border:none;
+	border-top:1px solid #F99;
+	height:80px;
+	line-height: 80px;
+	font-size:2em;
+	color:#F99;
+	transition: all 0.4s;
+}
+
+.form-container form input[type="submit"]:hover{
+	box-shadow:inset 0px 80px linear-gradient(to right, rgb(255, 153, 153), transparent);
+	cursor: pointer;
+	color:white;
+}
+
+input::-webkit-input-placeholder{
+	color:rgb(100,100,100);
+}

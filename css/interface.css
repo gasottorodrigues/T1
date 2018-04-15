@@ -4,7 +4,7 @@
 }
 
 body{
-	background: linear-gradient(to right,#222, #444);
+	background: linear-gradient(to right,#222, #044);
 }
 
 header{
@@ -67,4 +67,5 @@ nav li:hover{
 	border-radius:20px;
 	box-shadow:3px 3px 10px rgba(0,0,0,0.3);
 	background:white;
+	min-height: 150px;
 }

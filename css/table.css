@@ -1,0 +1,29 @@
+.table-container{
+	display:flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.table-container table{
+	width:100%;
+	margin:20px 30px;
+	box-shadow: 3px 3px 5px rgba(0,0,0,0.5);
+	border-collapse: collapse;
+	border:1px solid #f66;
+}
+
+.table-container table th{
+	background: #f66;
+	padding:5px;
+	font-size:1.5em;
+	text-transform: uppercase;
+	color:white;
+	font-weight: lighter;
+}
+.table-container table td{
+	padding:5px;
+	color:rgba(0,0,0,0.6);
+	font-size:1.2em;
+	border-bottom:1px solid #f66;
+	text-align:center;
+}
